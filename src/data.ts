@@ -274,7 +274,13 @@ export const GALLERY_IMAGES = [
   { url: '/08.jfif', caption: 'Blue Nile Falls (Tis Abay) cascades' },
   { url: '/110.jpeg', caption: 'Exploring the sandstone canyons of Konso New York' },
   { url: '/111.jpeg', caption: 'Navigating the eroded sand skyscrapers of Konso New York' },
-  { url: '/112.jpeg', caption: 'Traditional Ethiopian attire and colorful weaving' }
+  { url: '/112.jpeg', caption: 'Traditional Ethiopian attire and colorful weaving' },
+  { url: '/09.jpeg', caption: 'Portrait of an Omo Valley tribe member with traditional face paint' },
+  { url: '/10.jpeg', caption: 'Mursi tribe woman with traditional lip plate and tusk ornaments' },
+  { url: '/11.jpeg', caption: 'Mursi elder displaying a patterned clay lip plate' },
+  { url: '/12.jpeg', caption: 'Travelers meeting with Hamer tribe women at a local market' },
+  { url: '/13.jpeg', caption: 'Hamer women with traditional ochre hair and neck rings' },
+  { url: '/14.jpeg', caption: 'Cultural exchange and vibrant fabrics in the Hamer village' }
 ];
 
 
