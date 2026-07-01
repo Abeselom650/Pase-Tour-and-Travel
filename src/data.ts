@@ -141,7 +141,7 @@ export const EVENTS: Event[] = [
     date: 'January 19 (Annually)',
     location: 'Gondar & Addis Ababa',
     description: 'The most spectacular religious festival in Ethiopia, celebrating the baptism of Jesus in the Jordan River. Tabots (holy replicas of the Ark of the Covenant) are carried in colorful processions led by heavily vested priests dancing to rhythmic drumming.',
-    image: 'https://via.placeholder.com/1200x800?text=Timkat+Festival+Ethiopia'
+    image: '/Timket.jfif'
   },
   {
     id: 'meskel',
@@ -149,7 +149,7 @@ export const EVENTS: Event[] = [
     date: 'September 27 (Annually)',
     location: 'Meskel Square, Addis Ababa',
     description: 'UNESCO registered feast celebrating the finding of the True Cross. Thousands gather to ignite "Demera," a massive bonfire topped with cross-petaled yellow Meskel daisies symbolizing the smoke of Queen Helena\'s guiding fire.',
-    image: 'https://via.placeholder.com/1200x800?text=Meskel+Demera+Celebration'
+    image: '/Meskel.jfif'
   },
   {
     id: 'cultural-dance',
@@ -157,7 +157,7 @@ export const EVENTS: Event[] = [
     date: 'Weekly Every Friday / Saturday',
     location: 'Yod Abyssinia, Addis Ababa',
     description: 'Immersive nights showcasing the jaw-droppingly rapid shoulder dances (Eskista) from diverse ethnic groups including Amhara, Oromo, Tigray, Gurage, and more, performed alongside authentic instruments like the Masinko.',
-    image: 'https://via.placeholder.com/1200x800?text=Cultural+Dance+Shows'
+    image: '/Gonder.jfif'
   },
   {
     id: 'coffee-ceremony',
@@ -165,7 +165,7 @@ export const EVENTS: Event[] = [
     date: 'Daily Interactive Experiences',
     location: 'Passe tour and travel Headquarters & Village Homes',
     description: 'Participate in the highly ritualized \"Buna\" brewing, from hand-washing the green coffee beans, roasting them over glowing hot coals, dispersing fragrant frankincense, to serving three traditional rounds: Awel, Kalei, and Baraka.',
-    image: 'https://via.placeholder.com/1200x800?text=Ethiopian+Coffee+Ceremonies'
+    image: '/Coffe.jfif'
   }
 ];
 
