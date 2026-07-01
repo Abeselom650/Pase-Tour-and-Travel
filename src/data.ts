@@ -271,7 +271,10 @@ export const GALLERY_IMAGES = [
   { url: '/tana.jpg', caption: 'Biblical murals of island monasteries' },
   { url: '/bale.jpg', caption: 'Endemic Ethiopian Wolf in Bale' },
   { url: '/Meskel.jfif', caption: 'Meskel festival yellow blooms' },
-  { url: 'https://via.placeholder.com/1200x800?text=Blue+Nile+Waterfalls+Cascades', caption: 'Spannung at Blue Nile Falls (Tis Abay)' }
+  { url: '/08.jfif', caption: 'Blue Nile Falls (Tis Abay) cascades' },
+  { url: '/110.jpeg', caption: 'Exploring Lalibela\'s historic rock-hewn caves' },
+  { url: '/111.jpeg', caption: 'Navigating ancient stone-cut pathways' },
+  { url: '/112.jpeg', caption: 'Traditional Ethiopian attire and colorful weaving' }
 ];
 
 
