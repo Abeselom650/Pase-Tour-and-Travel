@@ -10,11 +10,11 @@ export default function SocialMedia({ mode = 'floating' }: SocialMediaProps) {
   const [showFullMenu, setShowFullMenu] = useState(false);
 
   const socialProfiles = [
-    { name: 'WhatsApp', href: 'https://wa.me/251911234567', icon: MessageCircle, color: 'bg-[#FF7A00]' },
+    { name: 'WhatsApp', href: 'https://wa.me/251970726625', icon: MessageCircle, color: 'bg-[#FF7A00]' },
     { name: 'Telegram', href: 'https://t.me/pasetourandtravel', icon: Send, color: 'bg-[#E06B00]' },
-    { name: 'Instagram', href: 'https://instagram.com/pasetour', icon: Instagram, color: 'bg-[#CC6200]' },
-    { name: 'Facebook', href: 'https://facebook.com/pasetour', icon: Facebook, color: 'bg-[#FF8A1A]' },
-    { name: 'TikTok', href: 'https://tiktok.com/@pasetour', icon: Video, color: 'bg-white' },
+    { name: 'Instagram', href: 'https://instagram.com/Passe_tour_travel', icon: Instagram, color: 'bg-[#CC6200]' },
+    { name: 'Facebook', href: 'https://facebook.com/Passe_tour_travel', icon: Facebook, color: 'bg-[#FF8A1A]' },
+    { name: 'TikTok', href: 'https://tiktok.com/@passetoor', icon: Video, color: 'bg-white' },
     { name: 'YouTube', href: 'https://youtube.com/pasetour', icon: Youtube, color: 'bg-[#FF7A00]' },
     { name: 'LinkedIn', href: 'https://linkedin.com/company/pasetour', icon: Linkedin, color: 'bg-[#D86A00]' },
     { name: 'X (Twitter)', href: 'https://x.com/pasetour', icon: Twitter, color: 'bg-[#F28C28]' },
@@ -69,7 +69,7 @@ export default function SocialMedia({ mode = 'floating' }: SocialMediaProps) {
         {/* WhatsApp Ring pulsing button */}
         <a
           id="floating-whatsapp-chat"
-          href="https://wa.me/251911234567"
+          href="https://wa.me/251970726625"
           target="_blank"
           referrerPolicy="no-referrer"
           rel="noopener noreferrer"

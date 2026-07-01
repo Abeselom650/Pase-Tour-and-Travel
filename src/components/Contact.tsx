@@ -57,7 +57,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-white border-y border-black/5 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header */}
         <div className="text-center space-y-3 mb-16">
           <span className="text-xs font-mono font-bold tracking-widest text-primary uppercase inline-flex items-center gap-1.5">
@@ -75,10 +75,10 @@ export default function Contact() {
 
         {/* Contact info cards grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-          
+
           {/* Card Info items */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:col-span-4 gap-4">
-            
+
             <div className="bg-white p-6 rounded-2xl border border-black/5 space-y-3">
               <span className="w-10 h-10 rounded-sm bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
                 <MapPin className="w-5 h-5" />
@@ -101,7 +101,7 @@ export default function Contact() {
                 Direct Hotline
               </h4>
               <p className="text-xs text-black/50 leading-relaxed font-mono font-light">
-                +251 911 234 567 <br />
+                +251 970 726 625 <br />
                 +251 908 987 654
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function Contact() {
 
           {/* Form Area */}
           <div className="lg:col-span-8 bg-white p-6 sm:p-10 rounded-2xl border border-black/5 shadow-inner">
-            
+
             {submitSuccess ? (
               <div className="text-center py-6 space-y-4">
                 <div className="w-12 h-12 bg-primary/10 border border-primary/20 rounded-sm flex items-center justify-center text-primary mx-auto">
@@ -169,9 +169,8 @@ export default function Contact() {
                       value={formData.fullName}
                       onChange={handleChange}
                       placeholder="e.g. Abeselom Beyene Yosef"
-                      className={`w-full px-4 py-3 bg-white border ${
-                        errors.fullName ? 'border-orange-500 focus:ring-orange-500' : 'border-black/10 focus:ring-primary'
-                      } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
+                      className={`w-full px-4 py-3 bg-white border ${errors.fullName ? 'border-orange-500 focus:ring-orange-500' : 'border-black/10 focus:ring-primary'
+                        } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
                     />
                     {errors.fullName && <span className="text-[10px] text-orange-500 block">{errors.fullName}</span>}
                   </div>
@@ -185,9 +184,8 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="e.g. abeselom@gmail.com"
-                      className={`w-full px-4 py-3 bg-white border ${
-                        errors.email ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
-                      } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
+                      className={`w-full px-4 py-3 bg-white border ${errors.email ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
+                        } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
                     />
                     {errors.email && <span className="text-[10px] text-orange-500 block">{errors.email}</span>}
                   </div>
@@ -202,9 +200,8 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder="e.g. Family Safari Inclusions, Hotel Tier Upgrades"
-                    className={`w-full px-4 py-3 bg-white border ${
-                      errors.subject ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
-                    } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
+                    className={`w-full px-4 py-3 bg-white border ${errors.subject ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
+                      } rounded-sm text-sm focus:outline-none focus:ring-1 text-black`}
                   />
                   {errors.subject && <span className="text-[10px] text-orange-500 block">{errors.subject}</span>}
                 </div>
@@ -218,9 +215,8 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Please write down what you wish to ask..."
-                    className={`w-full px-4 py-3 bg-white border ${
-                      errors.message ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
-                    } rounded-sm text-sm focus:outline-none focus:ring-1 text-black resize-none`}
+                    className={`w-full px-4 py-3 bg-white border ${errors.message ? 'border-orange-500' : 'border-black/10 focus:ring-primary'
+                      } rounded-sm text-sm focus:outline-none focus:ring-1 text-black resize-none`}
                   />
                   {errors.message && <span className="text-[10px] text-orange-500 block">{errors.message}</span>}
                 </div>
@@ -273,12 +269,12 @@ export default function Contact() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="space-y-1 text-xs text-black/50 font-light leading-normal border-t border-black/10 pt-2.5">
                 <span className="block italic">"Bole Road, Imperial Building, Office 304"</span>
                 <span className="block font-semibold font-mono">9.0016Â° N, 38.7889Â° E</span>
               </div>
-              
+
               <a
                 id="contact-open-google-maps"
                 href="https://maps.google.com/?q=Bole+Road,Addis+Ababa,Ethiopia"

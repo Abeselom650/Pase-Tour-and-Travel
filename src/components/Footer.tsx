@@ -40,11 +40,11 @@ export default function Footer({ onLegalClick }: FooterProps) {
   };
 
   const socialLinks = [
-    { name: 'WhatsApp', href: 'https://wa.me/251911234567', icon: MessageCircle },
+    { name: 'WhatsApp', href: 'https://wa.me/251970726625', icon: MessageCircle },
     { name: 'Telegram', href: 'https://t.me/pasetourandtravel', icon: Send },
-    { name: 'Instagram', href: 'https://instagram.com/pasetour', icon: Instagram },
-    { name: 'Facebook', href: 'https://facebook.com/pasetour', icon: Facebook },
-    { name: 'TikTok', href: 'https://tiktok.com/@pasetour', icon: Video },
+    { name: 'Instagram', href: 'https://instagram.com/Passe_tour_travel', icon: Instagram },
+    { name: 'Facebook', href: 'https://facebook.com/Passe_tour_travel', icon: Facebook },
+    { name: 'TikTok', href: 'https://tiktok.com/@passetoor', icon: Video },
     { name: 'YouTube', href: 'https://youtube.com/pasetour', icon: Youtube },
     { name: 'LinkedIn', href: 'https://linkedin.com/company/pasetour', icon: Linkedin },
     { name: 'X (Twitter)', href: 'https://x.com/pasetour', icon: Twitter },

@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Guide',
     excerpt: 'From extreme salt deserts to lush cloud forests and medieval stone churches, explore the best places that make Ethiopia an absolute global travel gem.',
     content: 'Ethiopia is a land of unique extremes, beautiful wildlife, and centuries-old cultural structures. Unlike most of the continent, Ethiopia was never colonized, meaning its ancient histories, languages, and calendar survive pristine and intact. In this article, our leading travel experts count down the top ten must-see landscapes, including Dallol, Lalibela, the Simien Mountains, and the active lava flows of Erta Ale.',
-    image: 'https://via.placeholder.com/1200x800?text=Top+10+Places+in+Ethiopia'
+    image: '/Lalibela.jfif'
   },
   {
     id: 'guide-to-lalibela',
@@ -280,7 +280,11 @@ export const GALLERY_IMAGES = [
   { url: '/11.jpeg', caption: 'Mursi elder displaying a patterned clay lip plate' },
   { url: '/12.jpeg', caption: 'Travelers meeting with Hamer tribe women at a local market' },
   { url: '/13.jpeg', caption: 'Hamer women with traditional ochre hair and neck rings' },
-  { url: '/14.jpeg', caption: 'Cultural exchange and vibrant fabrics in the Hamer village' }
+  { url: '/14.jpeg', caption: 'Cultural exchange and vibrant fabrics in the Hamer village' },
+  { url: '/15.jpeg', caption: 'Traditional thatched huts in a southern Ethiopian village' },
+  { url: '/16.jpeg', caption: 'Local life outside the iconic Konso-style roundhouses' },
+  { url: '/17.jpeg', caption: 'Aerial view of the vibrant village landscape and thatched homes' },
+  { url: '/18.jpeg', caption: 'Smiling Omo Valley children with painted faces beside the river' }
 ];
 
 
