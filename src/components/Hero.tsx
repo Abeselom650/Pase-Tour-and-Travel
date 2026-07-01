@@ -8,7 +8,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onExploreToursClick, onBookTripClick }: HeroProps) {
-  const [showVideo, setShowVideo] = useState(true);
+  const [showVideo, setShowVideo] = useState(false);
   const demoVideoId = 'K6FjfCuhgrY';
   const demoVideoThumbnail = `https://img.youtube.com/vi/${demoVideoId}/maxresdefault.jpg`;
   const demoVideoEmbedUrl = 'https://www.youtube.com/embed/K6FjfCuhgrY?si=rQcIfOnTsgQM_a3r&autoplay=1&mute=1';
@@ -71,39 +71,62 @@ export default function Hero({ onExploreToursClick, onBookTripClick }: HeroProps
         {/* Video Placeholder Box / Cinematic Trigger */}
         <div className="lg:col-span-5 flex justify-center">
           <div className="relative group w-full max-w-md aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden border border-black/10 shadow-2xl p-2 bg-white/70 backdrop-blur-sm">
-            <div className="absolute inset-0 m-2 rounded-[22px] overflow-hidden">
-              <img
-                src={demoVideoThumbnail}
-                alt="Ethiopia Cinematic Tour video thumbnail"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"
-              />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/25 transition-all flex items-center justify-center" />
-            </div>
+            {showVideo ? (
+              <div className="absolute inset-0 m-2 rounded-[22px] overflow-hidden">
+                <button
+                  onClick={() => setShowVideo(false)}
+                  className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-black flex justify-center items-center cursor-pointer border border-black/10 shadow-md transition-all hover:scale-105"
+                  title="Close Video"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                <iframe
+                  className="w-full h-full"
+                  src={demoVideoEmbedUrl}
+                  title="Passe tour and travel Promo Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <>
+                <div className="absolute inset-0 m-2 rounded-[22px] overflow-hidden">
+                  <img
+                    src={demoVideoThumbnail}
+                    alt="Ethiopia Cinematic Tour video thumbnail"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-75"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/25 transition-all flex items-center justify-center" />
+                </div>
 
-            {/* Pulsating Play Button */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 z-10">
-              <button
-                id="hero-play-promotional-video"
-                onClick={() => setShowVideo(true)}
-                className="w-16 h-16 rounded-full bg-primary hover:bg-primary-hover text-black flex items-center justify-center shadow-2xl shadow-primary/40 relative group cursor-pointer hover:scale-110 transition-all border-4 border-black/20"
-              >
-                <Play className="w-6 h-6 fill-white ml-1" />
-                <span className="absolute -inset-2 rounded-full border-2 border-primary/45 animate-ping opacity-75 pointer-events-none" />
-              </button>
-              <span className="text-xs font-mono font-semibold tracking-widest text-white group-hover:text-white uppercase transition-colors">
-                Watch Promo Reel
-              </span>
-            </div>
+                {/* Pulsating Play Button */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 z-10">
+                  <button
+                    id="hero-play-promotional-video"
+                    onClick={() => setShowVideo(true)}
+                    className="w-16 h-16 rounded-full bg-primary hover:bg-primary-hover text-black flex items-center justify-center shadow-2xl shadow-primary/40 relative group cursor-pointer hover:scale-110 transition-all border-4 border-black/20"
+                  >
+                    <Play className="w-6 h-6 fill-white ml-1" />
+                    <span className="absolute -inset-2 rounded-full border-2 border-primary/45 animate-ping opacity-75 pointer-events-none" />
+                  </button>
+                  <span className="text-xs font-mono font-semibold tracking-widest text-white group-hover:text-white uppercase transition-colors">
+                    Watch Promo Reel
+                  </span>
+                </div>
 
-            {/* Quick Badges inside cover */}
-            <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10">
-              <span className="text-[10px] font-mono font-bold bg-white/95 backdrop-blur-md border border-black/10 px-2.5 py-1 rounded-md text-primary tracking-widest uppercase">
-                Vlog #1 PREVIEW
-              </span>
-              <span className="text-[10px] font-mono text-white tracking-wider">
-                02:45 Mins
-              </span>
-            </div>
+                {/* Quick Badges inside cover */}
+                <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10">
+                  <span className="text-[10px] font-mono font-bold bg-white/95 backdrop-blur-md border border-black/10 px-2.5 py-1 rounded-md text-primary tracking-widest uppercase">
+                    Vlog #1 PREVIEW
+                  </span>
+                  <span className="text-[10px] font-mono text-white tracking-wider">
+                    02:45 Mins
+                  </span>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -113,30 +136,6 @@ export default function Hero({ onExploreToursClick, onBookTripClick }: HeroProps
         <span>Coordinate: 9.1450 N, 38.7425 E</span>
         <span>Ethiopian Time: Phase 13 Months of Sunshine</span>
       </div>
-
-      {/* Video Lightbox Modal */}
-      {showVideo && (
-        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-lg flex items-center justify-center p-4">
-          <div className="absolute inset-0" onClick={() => setShowVideo(false)} />
-          <div className="relative w-full max-w-4xl aspect-video bg-white border border-black/10 rounded-2xl overflow-hidden shadow-2xl z-10 m-2">
-            <button
-              onClick={() => setShowVideo(false)}
-              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/95 hover:bg-black/5 text-black flex justify-center items-center cursor-pointer border border-black/10"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <iframe
-              className="w-full h-full"
-              src={demoVideoEmbedUrl}
-              title="Passe tour and travel Promo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
     </section>
   );
 }
