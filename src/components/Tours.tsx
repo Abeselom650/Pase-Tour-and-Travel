@@ -1,13 +1,14 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { TOUR_PACKAGES } from '../data';
 import { TourPackage } from '../types';
 import { Calendar, Tag, ArrowRight, DollarSign, Check } from 'lucide-react';
 
 interface ToursProps {
   onBookPackageClick: (pkg: TourPackage) => void;
+  onRequestCustomClick?: () => void;
 }
 
-export default function Tours({ onBookPackageClick }: ToursProps) {
+export default function Tours({ onBookPackageClick, onRequestCustomClick }: ToursProps) {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const categories = ['All', 'Cultural & History', 'Adventure & History', 'Tribal & Heritage', 'Extreme Adventure', 'Culinary & Agro'];
@@ -144,8 +145,12 @@ export default function Tours({ onBookPackageClick }: ToursProps) {
           <button
             id="tours-custom-itinerary"
             onClick={() => {
-              const el = document.getElementById('booking');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
+              if (onRequestCustomClick) {
+                onRequestCustomClick();
+              } else {
+                const el = document.getElementById('booking');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
             className="px-6 py-2.5 bg-primary hover:bg-primary-hover text-black text-xs sm:text-sm font-bold uppercase tracking-tighter rounded-sm hover:scale-105 transition-transform cursor-pointer"
           >

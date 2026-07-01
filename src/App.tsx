@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -18,6 +18,7 @@ import { TourPackage } from './types';
 export default function App() {
   const [selectedPkg, setSelectedPkg] = useState<TourPackage | null>(null);
   const [legalType, setLegalType] = useState<'privacy' | 'terms' | 'cookie' | 'copyright' | 'credits' | null>(null);
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   // Smooth scroll helper
   const scrollToSection = (id: string, offset = 80) => {
@@ -37,7 +38,7 @@ export default function App() {
 
   // Nav actions
   const handleBookNowNavbar = () => {
-    scrollToSection('booking');
+    setShowBookingModal(true);
   };
 
   // Hero actions
@@ -46,19 +47,19 @@ export default function App() {
   };
 
   const handleBookTripHero = () => {
-    scrollToSection('booking');
+    setShowBookingModal(true);
   };
 
   // Destinations planning trigger
   const handlePlanTripDestination = (destinationName: string) => {
-    // Fill temporary booking query or navigate downward
-    scrollToSection('booking');
+    setSelectedPkg(null);
+    setShowBookingModal(true);
   };
 
   // Selection callback from Tour cards
   const handleBookPackage = (pkg: TourPackage) => {
     setSelectedPkg(pkg);
-    scrollToSection('booking');
+    setShowBookingModal(true);
   };
 
   // Legal footer triggers
@@ -84,10 +85,13 @@ export default function App() {
       <Destinations onPlanTripClick={handlePlanTripDestination} />
 
       {/* 5. Signature Tour Packages list */}
-      <Tours onBookPackageClick={handleBookPackage} />
+      <Tours 
+        onBookPackageClick={handleBookPackage} 
+        onRequestCustomClick={() => setShowBookingModal(true)}
+      />
 
       {/* 6. Traditional Ceremonies & Festivals */}
-      <Events />
+      <Events onInquireEventClick={() => setShowBookingModal(true)} />
 
       {/* 7. Scenic Lightbox Gallery */}
       <Gallery />
@@ -102,7 +106,11 @@ export default function App() {
       <Testimonials />
 
       {/* 11. Multi-field Booking Form */}
-      <BookingForm selectedPackage={selectedPkg} />
+      <BookingForm 
+        selectedPackage={selectedPkg} 
+        isOpen={showBookingModal} 
+        onClose={() => setShowBookingModal(false)}
+      />
 
       {/* 12. Office Detail & Contact directions maps */}
       <Contact />

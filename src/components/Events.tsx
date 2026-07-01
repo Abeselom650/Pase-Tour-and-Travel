@@ -2,7 +2,11 @@ import React from 'react';
 import { EVENTS } from '../data';
 import { Calendar, MapPin } from 'lucide-react';
 
-export default function Events() {
+interface EventsProps {
+  onInquireEventClick?: () => void;
+}
+
+export default function Events({ onInquireEventClick }: EventsProps) {
   return (
     <section id="events" className="py-24 bg-white px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
@@ -68,8 +72,12 @@ export default function Events() {
                   <span>Passe tour and travel Guided Event</span>
                   <button
                     onClick={() => {
-                      const el = document.getElementById('booking');
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      if (onInquireEventClick) {
+                        onInquireEventClick();
+                      } else {
+                        const el = document.getElementById('booking');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }
                     }}
                     className="text-primary hover:underline cursor-pointer flex items-center gap-1 font-bold uppercase tracking-wider"
                   >
