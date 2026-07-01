@@ -1,6 +1,6 @@
 import React from 'react';
 import { EVENTS } from '../data';
-import { Calendar, MapPin, Coffee, Sparkles } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 
 export default function Events() {
   return (
@@ -36,19 +36,6 @@ export default function Events() {
                   alt={evt.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
                 />
-                
-                {/* Visual badge inside image */}
-                <div className="absolute top-4 left-4">
-                  {evt.id === 'coffee-ceremony' ? (
-                    <span className="p-2 rounded-sm bg-primary text-black flex items-center justify-center shadow-lg">
-                      <Coffee className="w-4 h-4 text-black" />
-                    </span>
-                  ) : (
-                    <span className="p-2 rounded-sm bg-white/95 text-black flex items-center justify-center border border-black/15 shadow-lg">
-                      <Sparkles className="w-4 h-4 text-primary" />
-                    </span>
-                  )}
-                </div>
               </div>
 
               {/* Event Details */}
