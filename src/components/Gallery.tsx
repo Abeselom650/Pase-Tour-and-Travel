@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GALLERY_IMAGES } from '../data';
 import { Maximize2, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
@@ -83,7 +83,7 @@ export default function Gallery() {
                       <span className="block text-[9px] font-mono font-bold tracking-widest text-primary uppercase mb-1">
                         Ethiopian Expedition
                       </span>
-                      <h4 className="font-serif font-bold text-sm sm:text-base text-black leading-tight">
+                      <h4 className="font-serif font-bold text-sm sm:text-base text-white leading-tight">
                         {img.caption}
                       </h4>
                     </div>
