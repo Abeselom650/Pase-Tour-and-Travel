@@ -272,8 +272,8 @@ export const GALLERY_IMAGES = [
   { url: '/bale.jpg', caption: 'Endemic Ethiopian Wolf in Bale' },
   { url: '/Meskel.jfif', caption: 'Meskel festival yellow blooms' },
   { url: '/08.jfif', caption: 'Blue Nile Falls (Tis Abay) cascades' },
-  { url: '/110.jpeg', caption: 'Exploring Lalibela\'s historic rock-hewn caves' },
-  { url: '/111.jpeg', caption: 'Navigating ancient stone-cut pathways' },
+  { url: '/110.jpeg', caption: 'Exploring the sandstone canyons of Konso New York' },
+  { url: '/111.jpeg', caption: 'Navigating the eroded sand skyscrapers of Konso New York' },
   { url: '/112.jpeg', caption: 'Traditional Ethiopian attire and colorful weaving' }
 ];
 
