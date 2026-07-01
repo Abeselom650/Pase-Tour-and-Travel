@@ -264,10 +264,10 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  { url: '/Lalibela.jfif', caption: 'Lalibela monolithic marvel' },
-  { url: '/Denakil.jfif', caption: 'Dallol hydrothermal geysers' },
-  { url: '/Semen.jfif', caption: 'Gelada baboons of Simien Peaks' },
-  { url: '/Timket.jfif', caption: 'Timkat (Epiphany) holy parade' },
+  { url: '/01.jfif', caption: 'Lalibela monolithic marvel' },
+  { url: '/02.jfif', caption: 'Dallol hydrothermal geysers' },
+  { url: '/03.jfif', caption: 'Gelada baboons of Simien Peaks' },
+  { url: '/04.jfif', caption: 'Timkat (Epiphany) holy parade' },
   { url: '/tana.jpg', caption: 'Biblical murals of island monasteries' },
   { url: '/bale.jpg', caption: 'Endemic Ethiopian Wolf in Bale' },
   { url: '/Meskel.jfif', caption: 'Meskel festival yellow blooms' },
