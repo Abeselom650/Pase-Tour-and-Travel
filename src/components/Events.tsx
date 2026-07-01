@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { EVENTS } from '../data';
 import { Calendar, MapPin, Coffee, Sparkles } from 'lucide-react';
 
@@ -27,7 +27,7 @@ export default function Events() {
             <div
               key={evt.id}
               id={`event-card-${evt.id}`}
-              className="group bg-white rounded-2xl border border-black/5 hover:border-primary/20 hover:bg-[#1E1E1E] overflow-hidden shadow-none transition-all flex flex-col sm:flex-row"
+              className="group bg-white rounded-2xl border border-black/5 hover:border-primary/20 overflow-hidden shadow-none transition-all flex flex-col sm:flex-row"
             >
               {/* Event Image */}
               <div className="relative w-full sm:w-2/5 aspect-[4/3] sm:aspect-auto bg-white overflow-hidden">
