@@ -56,7 +56,7 @@ export default function Gallery() {
           {GALLERY_IMAGES.map((img, index) => {
             // Creative column spanning for some specific photos
             const isWide = index === 0 || index === 4;
-            const isTall = index === 2 || index === 7;
+            const isTall = index === 2 || index === 7 || index === 9 || index === 13 || index === 14;
 
             return (
               <div
