@@ -264,13 +264,13 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  { url: 'https://via.placeholder.com/1200x800?text=Beautiful+Lalibela+Rock+Churches', caption: 'Lalibela monolithic marvel' },
-  { url: 'https://via.placeholder.com/1200x800?text=Danakil+Depression+Sulfur+Pools', caption: 'Dallol hydrothermal geysers' },
-  { url: 'https://via.placeholder.com/1200x800?text=Simien+Gelada+Baboon+Herd', caption: 'Gelada baboons of Simien Peaks' },
-  { url: 'https://via.placeholder.com/1200x800?text=Timkat+Procession+Festivities', caption: 'Timkat (Epiphany) holy parade' },
-  { url: 'https://via.placeholder.com/1200x800?text=Lake+Tana+Ura+Monastery+Art', caption: 'Biblical murals of island monasteries' },
-  { url: 'https://via.placeholder.com/1200x800?text=Bale+Mountains+Wolf+Sighting', caption: 'Endemic Ethiopian Wolf in Bale' },
-  { url: 'https://via.placeholder.com/1200x800?text=Meskel+Yellow+Daisy+Feast', caption: 'Meskel festival yellow blooms' },
+  { url: '/Lalibela.jfif', caption: 'Lalibela monolithic marvel' },
+  { url: '/Denakil.jfif', caption: 'Dallol hydrothermal geysers' },
+  { url: '/Semen.jfif', caption: 'Gelada baboons of Simien Peaks' },
+  { url: '/Timket.jfif', caption: 'Timkat (Epiphany) holy parade' },
+  { url: '/tana.jpg', caption: 'Biblical murals of island monasteries' },
+  { url: '/bale.jpg', caption: 'Endemic Ethiopian Wolf in Bale' },
+  { url: '/Meskel.jfif', caption: 'Meskel festival yellow blooms' },
   { url: 'https://via.placeholder.com/1200x800?text=Blue+Nile+Waterfalls+Cascades', caption: 'Spannung at Blue Nile Falls (Tis Abay)' }
 ];
 
