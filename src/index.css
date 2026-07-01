@@ -1,0 +1,58 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-primary: #FF7A00;
+  --color-primary-hover: #E06B00;
+  --color-brand-black: #FFFFFF;
+  --color-brand-charcoal: #F8FAFC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.glass {
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Custom class animations/styles */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Lightbox support transition classes */
+.lightbox-fade-enter {
+  opacity: 0;
+}
+.lightbox-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+.lightbox-fade-exit {
+  opacity: 1;
+}
+.lightbox-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+
+
+
+

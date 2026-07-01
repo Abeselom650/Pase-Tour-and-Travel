@@ -1,0 +1,6 @@
+{
+  "name": "Passe tour and travel",
+  "description": "A premium, elegant, and fully functional tourism website for Passe tour and travel, featuring Ethiopian tourism, packages, and direct booking systems across beautiful Ethiopia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
